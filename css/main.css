@@ -290,7 +290,7 @@ button {
   width: 26px;
   height: 28px;
   background-size: contain;
-  background-image: url(../img/comment.png);
+  background-image: url('../img/comment.png');
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -361,7 +361,7 @@ button {
 }
 
 .back-link span {
-  background-image: url(../img/services.png);
+  background-image: url('../img/services.png');
   background-repeat: no-repeat;
   background-position: 6px -448px;
   margin: 0;
@@ -848,7 +848,7 @@ button {
   left: 0;
   transform: translate(-20px, -10px);
   background-repeat: no-repeat;
-  background-image: url(../img/icons7.png);
+  background-image: url('../img/icons7.png');
 }
 
 .catalog-detail_icon.__new {
@@ -952,7 +952,7 @@ button {
   font-weight: bold;
   font-size: 12.5px;
   DISPLAY: inline-block;
-  background: #e2e2e2 url(../img/award_ico.gif) 5px 0 no-repeat;
+  background: #e2e2e2 url('../img/award_ico.gif') 5px 0 no-repeat;
 }
 
 .catalog-detail_area {
@@ -1156,7 +1156,7 @@ button {
 
 .favorite_title:before {
   content: '';
-  background-image: url(../img/heart.png);
+  background-image: url('../img/heart.png');
   background-repeat: no-repeat;
   background-size: 49px;
   background-position: 6px 7px;
@@ -1540,7 +1540,7 @@ a.footer-top_social-inst {
   width: 100%;
   background-repeat: repeat-x;
   background-position: 0 -755px;
-  background-image: url(../img/services.png);
+  background-image: url('../img/services.png');
   margin-top: 20px;
   margin-bottom: 20px;
 }
