@@ -38,6 +38,28 @@ app.addModule('mobile-load', function () {
 		});
 	};
 });
+app.addModule('order', function () {
+	this.init = function () {
+		$('.order_checkbox').on('change', function () {
+			var next;
+			
+			$(this).closest('.order_item-block').addClass('active');
+			$(this).closest('.order_item').find('.order_label').removeClass('active');
+			$(this).closest('.order_label').addClass('active');
+			
+			var allNext = $(this).closest('.order_item-block').nextAll();
+			allNext.removeClass('active').find('.order_label').removeClass('active');
+			
+			if ($(this).attr('data-next')) {
+				next = $('#' + $(this).attr('data-next'));
+			} else {
+				next = $(this).closest('.order_item-block').next()
+			}
+		
+			next.addClass('active')
+		});
+	};
+});
 app.addModule('sort-block', function () {
 	this.init = function () {
 		var links = $('.sort-block_right a');

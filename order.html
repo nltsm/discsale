@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="top-header">
+		<div class="wrapper">
+			<div class="top-header_row">
+				<div class="top-header_text">2 миллиона музыкальных записей на Виниле, CD и DVD</div>
+				
+				<ul class="top-header_nav" id="top-header-nav">
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Оплата</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="wrapper">
+			<div class="header_row">
+				<div class="header_logo">
+					<img src="img/logo.png" width="146" alt="">
+				</div>
+				
+				<div class="header_tel">
+					<a href="">8 (499) 940-89-89</a>
+					<a href="">8 (916) 460-55-23</a>
+				</div>
+				
+				<a href="" class="header_cart">
+					Корзина <span>(0)</span>
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="bottom-header">
+		<div class="wrapper">
+			<div class="bottom-header_row">
+				<div class="bottom-header_form">
+					<div class="bottom-header_select">
+						<select>
+							<option selected>Весь каталог</option>
+							<option>Пластинки</option>
+							<option>Поп / Рок / Джаз</option>
+							<option>Классика</option>
+							<option>DVD и Blu-ray</option>
+							<option>Аудиокниги</option>
+							<option>Номер в каталоге</option>
+						</select>
+					</div>
+					
+					<div class="bottom-header_input">
+						<input type="text" maxlength="128" size="20" placeholder="Я ищу...">
+					</div>
+					
+					<div class="bottom-header_checkbox">
+						<input type="checkbox" id="sklad">
+						<label title="Искать только на складе" for="sklad">В наличии</label>
+					</div>
+					
+					<div class="bottom-header_button">
+						<button>Найти</button>
+					</div>
+				</div>
+				
+				<a href="" class="bottom-header_favorites"></a>
+				
+				<a href="" class="bottom-header_profile">Личный кабинет</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mobile-header">
+		<div class="wrapper">
+			<button type="button" class="mobile-header_button">
+				<span class="icon-txt">Меню</span>
+				<span class="icon-bar1"></span>
+				<span class="icon-bar2"></span>
+				<span class="icon-bar3"></span>
+			</button>
+		</div>
+		
+		<div class="mobile-header_content">
+			<div class="wrapper">
+				<ul class="mobile-header_list">
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Хиты продаж</a></li>
+					<li><a href="">Скидки и Акции</a></li>
+					<li><a href="">Поиск</a></li>
+				</ul>
+				
+				<div class="mobile-header_heading">КАТАЛОГ ЛЮБИМОЙ МУЗЫКИ</div>
+				
+				<ul class="mobile-header_list">
+					<li><a href="">Виниловые Пластинки (LP)</a></li>
+					<li><a href="">Поп, Рок, Джаз (CD)</a></li>
+					<li><a href="">Классическая музыка (CD)</a></li>
+					<li><a href="">SACD</a></li>
+					<li><a href="">Blu-ray музыка</a></li>
+					<li><a href="">DVD музыка</a></li>
+					<li><a href="">Кино и мультфильмы</a></li>
+					<li><a href="">Аудиокниги</a></li>
+					<li><a href="">Детям и родителям</a></li>
+					<li><a href="">Аксессуары и техника</a></li>
+					<li><a href="">Идеи для подарков</a></li>
+				</ul>
+				
+				<div class="mobile-header_heading">ПОКУПАТЕЛЮ</div>
+				
+				<div class="mobile-header_links">
+					<div data-clone-id="top-header-nav"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="wrapper">
+			<div class="order">
+				<h1 class="order_title">Оформление доставки</h1>
+				
+				<div class="order_items">
+					<div class="order_item-block active">
+						<div class="order_item">
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="11" data-next="order-1">
+								
+								<div class="order_content">
+									<div class="order_heading">Москва</div>
+									
+									<div class="order_description">
+										Доставка по Москве 100 руб. При сумме заказа от
+										<strong>5000 рублей</strong>
+										доставка по Москве - бесплатно
+									</div>
+								</div>
+							</label>
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="11" data-next="order-2">
+								
+								<div class="order_content">
+									<div class="order_heading">Другой город России</div>
+									
+									<div class="order_description">
+										<div class="order_city">
+											<span>Санкт-Петербург</span>
+											-
+											<span>Московская область</span>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					
+					<div id="order-1" class="order_item-block">
+						<div class="order_header">Способ доставки</div>
+						<div class="order_item">
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="22" data-next="order-3">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>Курьером по Москве</strong>
+										<span>299 руб</span>
+									</div>
+									
+									<div class="order_description">
+										<div class="order_description-inner">
+											Lorem ipsum dolor sit amet, consectetur
+											<span>adipisicing elit</span>
+											. A cupiditate eos esse ex natus quis quo voluptatibus? Accusantium, illo totam.
+										</div>
+									</div>
+								</div>
+							</label>
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="22" data-next="order-3">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>
+											Встреча с курьером в московском метро
+											<span>(в пределах кольцевой лини)</span>
+										</strong>
+										
+										<span>100 руб</span>
+									</div>
+									
+									<div class="order_description">
+										<div class="order_description-inner">
+											Lorem ipsum dolor sit amet, consectetur
+											<span>adipisicing elit</span>
+											. A cupiditate eos esse ex natus quis quo voluptatibus? Accusantium, illo totam.
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					
+					<div id="order-2" class="order_item-block">
+						<div class="order_header">Способ доставки -2</div>
+						<div class="order_item">
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="22" data-next="order-3">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>Курьером по Москве</strong>
+										<span>299 руб</span>
+									</div>
+									
+									<div class="order_description">
+										<div class="order_description-inner">
+											Lorem ipsum dolor sit amet, consectetur
+											<span>adipisicing elit</span>
+											. A cupiditate eos esse ex natus quis quo voluptatibus? Accusantium, illo totam.
+										</div>
+									</div>
+								</div>
+							</label>
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="22" data-next="order-3">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>
+											Встреча с курьером в московском метро
+											<span>(в пределах кольцевой лини)</span>
+										</strong>
+										
+										<span>100 руб</span>
+									</div>
+									
+									<div class="order_description">
+										<div class="order_description-inner">
+											Lorem ipsum dolor sit amet, consectetur
+											<span>adipisicing elit</span>
+											. A cupiditate eos esse ex natus quis quo voluptatibus? Accusantium, illo totam.
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					
+					<div id="order-3" class="order_item-block">
+						<div class="order_header">Оплата</div>
+						<div class="order_item">
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="33" data-next="order-4">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>Наличными курьеру</strong>
+										<span>Комиссия 0 руб</span>
+									</div>
+								</div>
+							</label>
+							<label class="order_label">
+								<input type="radio" class="order_checkbox" name="33" data-next="order-4">
+								
+								<div class="order_content">
+									<div class="order_heading">
+										<strong>
+											Предварительная оплата
+										</strong>
+										
+										<span>Комиссия 0 руб</span>
+									</div>
+									
+									<div class="order_description">
+										<div class="order_description-inner">
+											Lorem ipsum dolor sit amet, consectetur
+											<span>adipisicing elit</span>
+											. A cupiditate eos esse ex natus quis quo voluptatibus? Accusantium, illo totam.
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					
+					<div id="order-4" class="order_item-block">
+						<div class="order_header">
+							<span>Адрес доставки</span>
+							<span class="order_header-col"><span>*</span> Поля, выделенные звездочкой, обязательны для заполнения</span>
+						</div>
+						<div class="order_actions">
+							<div class="order_row">
+								<div class="order_col __1">EMAIL</div>
+								<div class="order_col __2">
+									<div class="order_email">791755555@yandex.ru</div>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Телефон <span>*</span></div>
+								<div class="order_col __2">
+									<input type="text" class="order_input">
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Фамилия <span>*</span></div>
+								<div class="order_col __2">
+									<input type="text" class="order_input">
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Имя <span>*</span></div>
+								<div class="order_col __2">
+									<input type="text" class="order_input">
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Отчество &nbsp;</div>
+								<div class="order_col __2">
+									<input type="text" class="order_input">
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Город <span>*</span></div>
+								<div class="order_col __2">
+									Москва
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Ближайшее метро <span>*</span></div>
+								<div class="order_col __2">
+									<select name="" class="order_select">
+										<option value="">Метро 1</option>
+										<option value="">Метро 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="order_col __1">Дополнительные условия доставки</div>
+								<div class="order_col __2">
+									<textarea class="order_area"></textarea>
+								</div>
+							</div>
+							
+							<label class="order_checkbox-agree">
+								<input type="checkbox">
+								<span>Я согласен получать сообщения о скидках и новинках по электронной почте</span>
+							</label>
+						</div>
+						
+						<button class="order_button">Создать заказ!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer-top">
+		<div class="wrapper">
+			<div class="footer-top_row">
+				<div class="footer-top_item __1">
+					<div class="footer-top_list">
+						<a href="">Виниловые Пластинки</a>
+						<a href="">Поп / Рок / Джаз</a>
+						<a href="">Классика</a>
+					</div>
+				</div>
+				
+				<div class="footer-top_item __2">
+					<div class="footer-top_list">
+						<a href="">SACD музыка</a>
+						<a href="">Blu-Ray музыка</a>
+						<a href="">DVD музыка</a>
+					</div>
+				</div>
+				
+				<div class="footer-top_item __3">
+					<div class="footer-top_list">
+						<a href="">Аудиокниги</a>
+						<a href="">Музыка детям</a>
+						<a href="">Аудиотехника</a>
+					</div>
+				</div>
+				
+				<div class="footer-top_item __4">
+					<div class="footer-top_social">
+						<div class="footer-top_social-title">Мы в соцсетях:</div>
+						
+						<div class="footer-top_social-items">
+							<a title="Присоединяйтесь к нам на Facebook" rel="nofollow noopener" target="_blank" href="https://www.facebook.com/cdvpodarok.ru" class="footer-top_social-facebook"></a>
+							<a title="Вступайте в нашу группу Вконтакте" rel="nofollow noopener" class="footer-top_social-vk" target="_blank" href="https://vk.com/cdvpodarok_ru"></a>
+							<a title="Читайте наш Твиттер" rel="nofollow noopener" target="_blank" href="https://twitter.com/cdvpodarok_ru" class="footer-top_social-twitter"></a>
+							<a title="Присоединяйтесь к нам на Google+" rel="nofollow noopener" target="_blank" href="https://plus.google.com/+CdvpodarokRu" class="footer-top_social-google"></a>
+							<a title="Подпишитесь на наш Инстаграм" rel="nofollow noopener" target="_blank" href="https://www.instagram.com/cdvpodarok_ru/" class="footer-top_social-inst"></a>
+						</div>
+					</div>
+					
+					<div class="footer-top_links">
+						<a href="">Контакты</a>
+						<a href="">Доставка</a>
+						<a href="">Оплата</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-middle">
+		<div class="wrapper">
+			<div class="footer-middle_row">
+				<span>Оплата:</span>
+				<a rel="nofollow" class="f1" title="Сбербанк Онлайн" href="/pages-about/oplata/"></a>
+				<a rel="nofollow" class="f2" title="Прием платежей по банковским картам VISA и MasterCard" href="/pages-about/oplata/"></a>
+				<a rel="nofollow" class="f3" title="Я принимаю Яндекс.Деньги" href="/pages-about/oplata/"></a>
+				<a rel="nofollow" class="f4" title="Альфа-Клик" href="/pages-about/oplata/"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="wrapper">
+			<div class="footer_content">
+				<p>Обращаем ваше внимание на то, что цены носят исключительно информационный характер и не являются публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации о наличии и стоимости указанных товаров и услуг, пожалуйста, обращайтесь к менеджерам отдела клиентского обслуживания по телефону: <a href="">8 (499) 940-89-89</a></p>
+				<p>Заказ CD-дисков, Пластинок и DVD по телефону в Москве и России: <a href="">8 (499) 940-89-89</a></p>
+				<p>© 2008-2018, «CD В ПОДАРОК»</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="back">
+			<span class="back_span"></span>Вверх
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/lib.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
