@@ -62,7 +62,7 @@ app.addModule('order', function () {
 });
 app.addModule('product-add-popup', function () {
 	this.init = function () {
-		$('.product-add-popup_close').click(function () {
+		$(document).on('click', '.product-add-popup_close', function () {
 			$('.product-add-popup').removeClass('active')
 		});
 	};
