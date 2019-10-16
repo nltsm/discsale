@@ -3153,6 +3153,101 @@ a.pagination_next {
   color: #999;
 }
 
+.product-add-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  border: 1px solid #585858;
+  box-shadow: 0 0 5px #3d3c3f;
+  display: none;
+}
+
+.product-add-popup.active {
+  display: block;
+}
+
+.product-add-popup_header {
+  background: #E6EAF4;
+  padding: 7px 20px;
+  font-size: 18px;
+}
+
+.product-add-popup_content {
+  padding: 20px;
+  background: #ffffff;
+}
+
+.product-add-popup_row {
+  display: flex;
+}
+
+.product-add-popup_image {
+  width: 100px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.product-add-popup_text {
+  flex-grow: 1;
+}
+
+.product-add-popup_title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-add-popup_info {
+  background-color: #e8e8e8;
+  font-size: 13px;
+  padding: 2px 5px;
+  white-space: nowrap;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.product-add-popup_bottom {
+  background: #E9E9E9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-add-popup_button.__1 {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #DEDEDE;
+  background: #ffffff;
+  padding: 7px 15px;
+}
+
+.product-add-popup_button.__2 {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #DEDEDE;
+  background: #3162AF;
+  padding: 4px 15px;
+}
+
+.product-add-popup_close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: #2C8ACD;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  top: -12px;
+  right: -12px;
+  cursor: pointer;
+  background-image: url("../img/close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
 .product {
   margin-bottom: 30px;
 }
@@ -4318,6 +4413,43 @@ a.pagination_next {
     width: auto;
     padding-left: 0;
     margin-bottom: 20px;
+  }
+
+  .product-add-popup {
+    width: 300px;
+  }
+
+  .product-add-popup_header {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  .product-add-popup_content {
+    padding: 10px;
+  }
+
+  .product-add-popup_image {
+    width: 80px;
+  }
+
+  .product-add-popup_title {
+    font-size: 14px;
+  }
+
+  .product-add-popup_bottom {
+    display: block;
+    padding: 10px;
+  }
+
+  .product-add-popup_button.__1 {
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  .product-add-popup_button.__2 {
+    display: block;
+    text-align: center;
   }
 
   .profile_content {
