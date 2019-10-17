@@ -3162,6 +3162,7 @@ a.pagination_next {
   border: 1px solid #585858;
   box-shadow: 0 0 5px #3d3c3f;
   display: none;
+  z-index: 1000;
 }
 
 .product-add-popup.active {
@@ -3281,7 +3282,7 @@ a.pagination_next {
 }
 
 .product_rating span {
-  width: 35px;
+  min-width: 35px;
   padding: 4px;
   border: 1px solid #a4c9a5;
   color: #4c739c;

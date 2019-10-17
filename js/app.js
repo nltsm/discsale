@@ -1,6 +1,6 @@
 app.addModule('back', function () {
 	this.init = function () {
-		$('.back').click(function () {
+		$(document).on('click', '.back', function() {
 			$('html, body').animate({
 				scrollTop: 0
 			}, 700);
