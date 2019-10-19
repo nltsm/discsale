@@ -2483,7 +2483,11 @@ a.footer-top_social-inst {
 }
 
 .order-detail {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.order-detail a {
+  text-decoration: none;
 }
 
 .order-detail_top {
@@ -2491,7 +2495,7 @@ a.footer-top_social-inst {
   justify-content: space-between;
   align-items: center;
   background: #ECF6EB;
-  padding: 5px 20px;
+  padding: 8px 20px;
   border: 1px solid #CDCDCD;
   margin-bottom: 10px;
 }
