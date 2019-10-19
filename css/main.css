@@ -2782,6 +2782,10 @@ a.footer-top_social-inst {
   display: none;
 }
 
+.order_description.active {
+  display: block;
+}
+
 .order_description strong,
 .order_description span {
   color: #2237A1;
@@ -2792,6 +2796,16 @@ a.footer-top_social-inst {
   border: 1px solid #A3B5A7;
   padding: 5px;
   font-size: 14px;
+}
+
+.order_description-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order_description-images img {
+  margin-right: 10px;
+  max-width: 70px;
 }
 
 .order_label.active .order_description {
@@ -2872,6 +2886,7 @@ a.footer-top_social-inst {
   font-size: 18px;
   text-align: center;
   color: #ffffff;
+  border: none;
 }
 
 .orders_title {
