@@ -2871,6 +2871,7 @@ a.footer-top_social-inst {
 .order_description-images {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .order_description-images img {
