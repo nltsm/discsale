@@ -60,6 +60,13 @@ app.addModule('order', function () {
 		});
 	};
 });
+app.addModule('ordered', function () {
+	this.init = function () {
+		$('.ordered_button').click(function () {
+			window.print();
+		});
+	};
+});
 app.addModule('product-add-popup', function () {
 	this.init = function () {
 		$(document).on('click', '.product-add-popup_close', function () {
