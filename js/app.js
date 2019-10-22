@@ -23,32 +23,33 @@ function init() {
 		zoom: 10
 	});
 	
-	// Создать ajax запрос
-	// сохранить данные в переменной placeMarks
-	// вызвать функцию changeCity
+	ymaps.geocode('Волгоград', {results: 1})
+		.then(function (res) {
+			changePlace(res);
+			
+			// Создать ajax запрос
+			// сохранить данные в переменной placeMarks
+			// вызвать функцию changeCity
+			var placeMarks = [
+				{
+					coords: [45.071684, 38.967354],
+					address: 'Краснодар, улица такая-то'
+				},
+
+				{
+					coords: [45.061687, 38.981362],
+					address: 'Краснодар, улица такая-то 2'
+				},
+			];
+			
+			changeCity(placeMarks);
+		});
 	
-	var placeMarks = [
-		{
-			coords: [55.684758, 37.738521],
-			address: 'Москва, улица такая-то'
-		},
-	];
-	
-	changeCity(placeMarks);
 	
 	$(document).on('change', '#cities', function () {
 		ymaps.geocode($(this).val(), {results: 1})
 		.then(function (res) {
-			var firstGeoObject = res.geoObjects.get(0);
-			var coords = firstGeoObject.geometry.getCoordinates();
-			var bounds = firstGeoObject.properties.get('boundedBy');
-
-			firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
-			firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
-			
-			myMap.setBounds(bounds, {
-				checkZoomRange: true
-			});
+			changePlace(res);
 			
 			
 			// Создать ajax запрос
@@ -89,6 +90,21 @@ function init() {
 				preset: 'islands#icon',
 				iconColor: '#0095b6'
 			}));
+		});
+	}
+	
+	function changePlace(res) {
+		var firstGeoObject = res.geoObjects.get(0);
+		var coords = firstGeoObject.geometry.getCoordinates();
+		var bounds = firstGeoObject.properties.get('boundedBy');
+
+		firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
+		firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
+		
+		myMap.setBounds(bounds, {
+			checkZoomRange: true,
+		}).then(function () {
+			myMap.setZoom(9)
 		});
 	}
 }
