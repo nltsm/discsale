@@ -15,6 +15,84 @@ app.addModule('back', function () {
 		});
 	};
 });
+ymaps.ready(init);
+
+function init() {
+	var myMap = new ymaps.Map("map", {
+		center: [55.76, 37.64],
+		zoom: 10
+	});
+	
+	// Создать ajax запрос
+	// сохранить данные в переменной placeMarks
+	// вызвать функцию changeCity
+	
+	var placeMarks = [
+		{
+			coords: [55.684758, 37.738521],
+			address: 'Москва, улица такая-то'
+		},
+	];
+	
+	changeCity(placeMarks);
+	
+	$(document).on('change', '#cities', function () {
+		ymaps.geocode($(this).val(), {results: 1})
+		.then(function (res) {
+			var firstGeoObject = res.geoObjects.get(0);
+			var coords = firstGeoObject.geometry.getCoordinates();
+			var bounds = firstGeoObject.properties.get('boundedBy');
+
+			firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
+			firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
+			
+			myMap.setBounds(bounds, {
+				checkZoomRange: true
+			});
+			
+			
+			// Создать ajax запрос
+			// сохранить данные в переменной placeMarks
+			// вызвать функцию changeCity
+
+			var placeMarks = [
+				{
+					coords: [45.071684, 38.967354],
+					address: 'Краснодар, улица такая-то'
+				},
+
+				{
+					coords: [45.061687, 38.981362],
+					address: 'Краснодар, улица такая-то 2'
+				},
+			];
+			
+			changeCity(placeMarks);
+		});
+	});
+
+	$(document).on('click', '.cart_address-check', function () {
+		var text = $(this).closest('.cart_balloon-content').find('.cart_balloon-address').text();
+
+		myMap.balloon.close();
+
+		$('.cart_map-address').html(text);
+		$('#cart-map-address').val(text);
+	});
+	
+	function changeCity(coords) {
+		coords.forEach(function (value) {
+			myMap.geoObjects
+			.add(new ymaps.Placemark(value['coords'], {
+				balloonContent: '<div class="cart_balloon-content"><div class="cart_balloon-address">' + value['address'] + '</div> <br><button class="cart_address-check">Выбрать</button></div>'
+			}, {
+				preset: 'islands#icon',
+				iconColor: '#0095b6'
+			}));
+		});
+	}
+}
+
 app.addModule('mobile-header', function () {
 	this.init = function () {
 		$('.mobile-header_button').click(function () {

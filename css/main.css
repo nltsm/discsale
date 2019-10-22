@@ -878,6 +878,21 @@ button {
   margin-bottom: 30px;
 }
 
+.cart_map {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cart_map-address {
+  margin-bottom: 30px;
+}
+
+.cart_address-check {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
 .catalog-detail {
   display: flex;
   padding: 20px 0;

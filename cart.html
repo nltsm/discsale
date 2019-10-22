@@ -206,12 +206,17 @@
 				
 				<h2 class="cart_heading">Доставка</h2>
 				
-				<select name="" class="cart_select">
-					<option value="">Lorem</option>
-					<option value="">Lorem</option>
+				<select name="" class="cart_select" id="cities">
+					<option value="Москва">Москва</option>
+					<option value="Краснодар">Краснодар</option>
 					<option value="">Lorem</option>
 					<option value="">Lorem</option>
 				</select>
+				
+				<div class="cart_map" id="map"></div>
+				
+				<div class="cart_map-address"></div>
+				<input type="hidden" id="cart-map-address">
 				
 				<div class="order __full">
 					<h2 class="cart_heading">Оплата</h2>
@@ -265,6 +270,8 @@
 			</div>
 		</div>
 	</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=edd53e40-7978-433c-84af-67f50781ea73&lang=ru_RU" type="text/javascript"></script>
 
 
 	<div class="footer-top">
