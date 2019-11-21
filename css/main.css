@@ -3943,13 +3943,14 @@ a.pagination_next {
 }
 
 .search_block img {
-  margin-right: 20px;
   flex-shrink: 0;
 }
 
 .search_image {
-  width: 70px;
+  width: 60px;
   text-align: center;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .search_image img {
