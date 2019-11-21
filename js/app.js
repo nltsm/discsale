@@ -1,3 +1,50 @@
+app.addModule('autocomplete', function () {
+	this.init = function () {
+		$("#search_product").autocomplete({
+			minLength: 1,
+			source: function (request, response) {
+				$.ajax({
+					method: 'get',
+					dataType: "json",
+					url: '/file.json',
+					data: {
+						query: request.term
+					},
+					success: function (data) {
+						/* ДОБАВИТЬ */
+						data.push({
+							label: 'Показать все результаты поиска',
+							last: true,
+							url: '/search?query=' + request.term
+						});
+						/* /ДОБАВИТЬ */
+						response(data);
+					}
+				})
+			},
+			select: function (event, ui) {
+				window.location.href = ui.item.url;
+			},
+			close: function (el) {
+				// el.target.value = '';
+			}
+		})
+		/* ДОБАВИТЬ */
+		.data("ui-autocomplete")._renderItem = function (ul, item) {
+			var inner_html = '<div class="search_block"><div class="search_image"><img src="https://discsale.ml' + item.image + '" alt=""></div> <span>' + item.label + '</span></div>';
+			
+			if (item.last === true) {
+				var inner_html = '<div class="search_block __last"><span>' + item.label + '</span></div>';
+			}
+			
+			return $("<li></li>")
+				.data("ui-autocomplete-item", item)
+				.append(inner_html)
+				.appendTo(ul);
+        };
+		/* /ДОБАВИТЬ */
+	};
+});
 app.addModule('back', function () {
 	this.init = function () {
 		$(document).on('click', '.back', function() {
@@ -15,7 +62,9 @@ app.addModule('back', function () {
 		});
 	};
 });
-ymaps.ready(init);
+try {
+	ymaps.ready(init);
+} catch(e) {}
 
 function init() {
 	var myMap = new ymaps.Map("map", {
