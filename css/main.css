@@ -3493,18 +3493,20 @@ a.pagination_next {
 
 .product_action {
   background-color: #f9f6e1;
-  padding: 15px 20px 12px;
+  padding: 0 20px 12px;
   font-size: 14px;
   width: 345px;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .product_price {
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .product_price span {
@@ -3548,6 +3550,48 @@ a.pagination_next {
   font-size: 14px;
   line-height: 18px;
   margin-top: 7px;
+}
+
+.product_available {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5F2E6;
+  padding: 10px;
+  margin: 0 -20px;
+}
+
+.product_available:before {
+  content: '';
+  background-image: url("../img/check.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  background-size: contain;
+}
+
+.product_sale {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  right: -42px;
+  top: 30px;
+  transform: translate(-20px, -10px);
+  background-repeat: no-repeat;
+  background-image: url('../img/icons7.png');
+  color: #000;
+  background-position: -1px -3px;
+  padding-top: 13px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.product_old-price {
+  padding-top: 15px;
+  text-decoration: line-through;
 }
 
 .profile_title {
@@ -4434,6 +4478,11 @@ a.ui-button:active,
     max-width: none;
   }
 
+  .product_sale {
+    top: 0;
+    right: 0;
+  }
+
   .reviews_item {
     display: block;
   }
@@ -4718,6 +4767,10 @@ a.ui-button:active,
   .product-add-popup_button.__2 {
     display: block;
     text-align: center;
+  }
+
+  .product_sale {
+    transform: translate(-5px, -25px);
   }
 
   .profile_content {
