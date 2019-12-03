@@ -183,7 +183,7 @@ app.addModule('mobile-load', function () {
 });
 app.addModule('order', function () {
 	this.init = function () {
-		$('.order_checkbox').on('change', function () {
+		$(document).on('change', '.order_checkbox', function () {
 			var next;
 			
 			$(this).closest('.order_item-block').addClass('active');
