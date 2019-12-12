@@ -158,6 +158,11 @@ function init() {
 	}
 }
 
+app.addModule('main-slider', function () {
+	this.init = function () {
+		$('.main-slider').slick();
+	};
+});
 app.addModule('mobile-header', function () {
 	this.init = function () {
 		$('.mobile-header_button').click(function () {
