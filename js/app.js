@@ -158,6 +158,7 @@ function init() {
 	}
 }
 
+
 app.addModule('main-slider', function () {
 	this.init = function () {
 		$('.main-slider').slick();
