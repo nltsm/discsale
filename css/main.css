@@ -1289,6 +1289,107 @@ button {
   line-height: 21px;
 }
 
+.category-2_lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-top: 30px;
+}
+
+.category-2_list {
+  width: 33.33%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.category-2_list ul li a {
+  padding: 5px 0;
+  border-top: 1px solid #e4e2dF;
+  border-bottom: 0px solid #D4D2CF;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.category-2_list ul li a:hover {
+  color: #d00;
+}
+
+.category-2_list ul li a span {
+  color: #100dbb;
+}
+
+.category-2_list ul li a span:hover {
+  color: #d00;
+}
+
+.category-2_lists-2 {
+  display: flex;
+  margin: 0 -10px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.category-2_list-2 {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.category-2_list-2 a {
+  color: #100dbb;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+.category-2_list-2 a:hover {
+  color: #d00;
+}
+
+.category-2_list-2 a span {
+  color: #999999;
+}
+
+.category-2_movie {
+  display: flex;
+  margin: 20px -10px;
+  flex-wrap: wrap;
+}
+
+.category-2_movie-item {
+  padding: 0 10px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.category-2_movie.__col-2 .category-2_movie-item {
+  width: 50%;
+}
+
+.category-2_movie.__col-3 .category-2_movie-item {
+  width: 33.333%;
+}
+
+.category-2_movie-row {
+  display: flex;
+  align-items: center;
+  color: #100dbb;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.category-2_movie-row span {
+  font-size: 12px;
+  color: #999;
+}
+
+.category-2_movie-row img {
+  width: 50px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
 .category-3 {
   padding: 15px 15px 15px;
   margin: 20px auto 30px;
@@ -4556,6 +4657,19 @@ a.ui-button:active,
   margin: 0;
 }
 
+.similar-block {
+  margin-bottom: 20px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.similar-block_title {
+  font-size: 19px;
+  margin: 0 0 20px;
+  padding: 3px 0;
+}
+
 .sort-block {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -5165,6 +5279,18 @@ a.ui-button:active,
     margin: 0 15px 15px;
   }
 
+  .category-2_movie-item {
+    width: 100%;
+  }
+
+  .category-2_movie.__col-2 .category-2_movie-item {
+    width: 100%;
+  }
+
+  .category-2_movie.__col-3 .category-2_movie-item {
+    width: 100%;
+  }
+
   .category-product_col {
     width: 50%;
   }
@@ -5414,6 +5540,14 @@ a.ui-button:active,
   }
 
   .catalog-detail_area {
+    width: 100%;
+  }
+
+  .category-2_list {
+    width: 100%;
+  }
+
+  .category-2_list-2 {
     width: 100%;
   }
 
