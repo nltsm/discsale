@@ -1187,6 +1187,77 @@ button {
   width: 100%;
 }
 
+.categories {
+  border: 1px solid #dddfe2;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 4px 4px 0;
+  border-radius: 2px;
+}
+
+.categories_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.categories_col {
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+.categories_item {
+  color: #100dbb;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #f6f7f9;
+  padding: 3px 5px 3px 5px;
+  font-weight: 700;
+}
+
+.categories_item:hover {
+  color: #d00;
+}
+
+.categories_item span {
+  font-size: 12px;
+  color: #999;
+}
+
+.categories_ico {
+  width: 24px;
+  margin-right: 2px;
+  height: 20px;
+  flex-shrink: 0;
+  background-image: url("../img/icons7.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.categories_ico.__1 {
+  background-position: -42px -91px;
+}
+
+.categories_ico.__2 {
+  background-position: -20px -91px;
+}
+
+.categories_ico.__3 {
+  background-position: 2px -91px;
+}
+
+.categories_ico.__4 {
+  background-position: 0 0;
+  background-image: url("../img/present_ico.ico");
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
 .category-2 {
   background: #f0f1f3;
   padding: 10px;
@@ -1304,6 +1375,7 @@ button {
 
 .category-2_list ul li a {
   padding: 5px 0;
+  padding-left: 20px;
   border-top: 1px solid #e4e2dF;
   border-bottom: 0px solid #D4D2CF;
   display: block;
@@ -1322,6 +1394,13 @@ button {
 
 .category-2_list ul li a span:hover {
   color: #d00;
+}
+
+.category-2_list ul li:first-child a {
+  background-image: url("../img/fbook_bg.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-position: -208px -144px;
 }
 
 .category-2_lists-2 {
