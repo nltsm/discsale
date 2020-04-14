@@ -2522,7 +2522,7 @@ a.footer-top_social-inst {
 
 .inner-1_item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   color: #100dbb;
   text-decoration: none;
   font-size: 15px;
@@ -2543,13 +2543,18 @@ a.footer-top_social-inst {
   border-color: #fff;
   margin-right: 10px;
   min-height: 16px;
-  margin-bottom: 3px;
 }
 
 .inner-1_title span {
   font-weight: normal;
   white-space: nowrap;
   color: #999;
+}
+
+.inner-1_subtitle {
+  font-size: 13px;
+  color: gray;
+  margin-top: 3px;
 }
 
 .left-bar {
