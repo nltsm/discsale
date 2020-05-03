@@ -834,6 +834,23 @@ button {
 .cart_product-image {
   width: 130px;
   margin-right: 20px;
+  position: relative;
+}
+
+.cart_product-sale {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 0;
+  left: 0;
+  transform: translate(-20px, -10px);
+  background-repeat: no-repeat;
+  background-image: url(../img/icons7.png);
+  color: #000;
+  background-position: -1px -3px;
+  padding-top: 13px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .cart_product-title {
@@ -3379,6 +3396,10 @@ a.footer-top_social-inst {
 
 .order-detail_product-title span {
   font-size: 13px;
+}
+
+.order-detail_product-content {
+  flex-grow: 1;
 }
 
 .order-detail_product-exist {
