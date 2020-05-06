@@ -161,6 +161,16 @@ function init() {
 
 app.addModule('inputmask', function () {
 	this.init = function () {
+		this.mask();
+	};
+	
+	this.update = function () {
+		$('input.tel').inputmask('remove');
+		
+		this.mask();
+	};
+	
+	this.mask = function () {
 		$('input.tel').inputmask('+7 999 999 99 99');
 	};
 });

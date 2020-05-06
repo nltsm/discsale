@@ -845,7 +845,7 @@ button {
   left: 0;
   transform: translate(-20px, -10px);
   background-repeat: no-repeat;
-  background-image: url(../img/icons7.png);
+  background-image: url('../img/icons7.png');
   color: #000;
   background-position: -1px -3px;
   padding-top: 13px;
