@@ -159,6 +159,11 @@ function init() {
 }
 
 
+app.addModule('inputmask', function () {
+	this.init = function () {
+		$('input.tel').inputmask('+7 999 999 99 99');
+	};
+});
 app.addModule('main-slider', function () {
 	this.init = function () {
 		$('.main-slider').slick();
