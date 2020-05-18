@@ -1645,6 +1645,7 @@ button {
 .category-product_bottom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .category-product_item {
@@ -2674,6 +2675,13 @@ a.footer-top_social-inst {
   padding: 2px 4px;
   font-weight: normal;
   background-color: #18a109;
+  color: #fff;
+}
+
+.idea_item.__4 {
+  padding: 2px 4px;
+  font-weight: normal;
+  background-color: #c22f2f;
   color: #fff;
 }
 
@@ -5264,6 +5272,7 @@ a.ui-button:active,
 .viewed_bottom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .viewed_item {
