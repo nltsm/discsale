@@ -1650,7 +1650,6 @@ button {
 .category-product_item {
   background-color: #c3c8ff;
   font-size: 13px;
-  max-width: 68px;
   padding: 2px 5px;
   white-space: nowrap;
   margin: 9px 6px 0 0;
@@ -2653,7 +2652,6 @@ a.footer-top_social-inst {
 .idea_item {
   background-color: #c3c8ff;
   font-size: 13px;
-  max-width: 68px;
   padding: 2px 5px;
   white-space: nowrap;
   margin: 9px 6px 0 0;
@@ -5270,7 +5268,6 @@ a.ui-button:active,
 .viewed_item {
   background-color: #c3c8ff;
   font-size: 13px;
-  max-width: 68px;
   padding: 2px 5px;
   white-space: nowrap;
   margin: 9px 6px 0 0;
