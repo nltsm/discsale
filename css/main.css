@@ -2647,6 +2647,7 @@ a.footer-top_social-inst {
 .idea_bottom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .idea_item {
