@@ -1630,6 +1630,7 @@ button {
 
 .category-product_image {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .category-product_name {
@@ -1673,6 +1674,22 @@ button {
   font-weight: normal;
   background-color: #18a109;
   color: #fff;
+}
+
+.category-product_sale {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 0;
+  left: 0;
+  transform: translate(-20px, -10px);
+  background-repeat: no-repeat;
+  background-image: url('../img/icons7.png');
+  color: #000;
+  background-position: -1px -3px;
+  padding-top: 13px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .category {
@@ -2275,6 +2292,25 @@ button {
   margin-left: 5px;
   font-size: 11px;
   color: #a0a0a0;
+}
+
+.filters_price {
+  margin: 20px 0;
+  padding: 0 10px 0 5px;
+}
+
+.filters_inputs {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters_input {
+  width: 100px;
+  padding: 7px 0 5px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #eee;
 }
 
 .footer-middle {
@@ -5355,6 +5391,10 @@ a.ui-button:active,
 
   .category-product_col {
     width: 50%;
+  }
+
+  .category-product_sale {
+    transform: none;
   }
 
   .contact iframe {

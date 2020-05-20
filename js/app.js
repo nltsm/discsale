@@ -158,6 +158,44 @@ function init() {
 	}
 }
 
+app.addModule('catalog', function () {
+	this.init = function () {
+		var slider = document.getElementById('filter-price');
+
+		noUiSlider.create(slider, {
+			range: {
+				min: parseInt($(slider).attr('data-min')),
+				max: parseInt($(slider).attr('data-max')),
+			},
+			step: parseInt($(slider).attr('data-step')),
+			start: [parseInt($(slider).attr('data-start')), parseInt($(slider).attr('data-end')),],
+			connect: true,
+			format: {
+				from: function (value) {
+					return parseInt(value);
+				},
+				to: function (value) {
+					return parseInt(value);
+				}
+			}
+		});
+
+		slider.noUiSlider.on('update', function (values, handle) {
+			var value1 = values[0];
+			var value2 = values[1];
+
+			$('#price-min').val(value1);
+			$('#price-max').val(value2);
+		});
+
+		$('#price-min').addEventListener('change', function () {
+			html5Slider.noUiSlider.set([parseInt(this.value), null]);
+		});
+		$('#price-max').addEventListener('change', function () {
+			html5Slider.noUiSlider.set([null, parseInt(this.value)]);
+		});
+	};
+});
 
 app.addModule('inputmask', function () {
 	this.init = function () {
