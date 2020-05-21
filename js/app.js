@@ -188,10 +188,10 @@ app.addModule('catalog', function () {
 			$('#price-max').val(value2);
 		});
 
-		$('#price-min').addEventListener('change', function () {
+		$('#price-min').on('change', function () {
 			html5Slider.noUiSlider.set([parseInt(this.value), null]);
 		});
-		$('#price-max').addEventListener('change', function () {
+		$('#price-max').on('change', function () {
 			html5Slider.noUiSlider.set([null, parseInt(this.value)]);
 		});
 	};
