@@ -1049,6 +1049,16 @@ button {
   position: relative;
 }
 
+.catalog-detail_icons {
+  display: flex;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 0;
+  left: 0;
+  transform: translate(-20px, -10px);
+}
+
 .catalog-detail_icon {
   position: absolute;
   width: 41px;
@@ -1070,6 +1080,12 @@ button {
   padding-top: 13px;
   font-size: 13px;
   text-align: center;
+}
+
+.catalog-detail_icons .catalog-detail_icon {
+  position: static;
+  transform: none;
+  flex-shrink: 0;
 }
 
 .catalog-detail_info {
