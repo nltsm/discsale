@@ -5698,6 +5698,11 @@ a.ui-button:active,
     width: 50%;
   }
 
+  .category-product_image {
+    max-width: 150px;
+    margin: 0 auto 20px;
+  }
+
   .category_item {
     width: 50%;
   }
