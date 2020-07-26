@@ -295,6 +295,33 @@ app.addModule('sort-block', function () {
 		select.appendTo('.sort-block_right')
 	};
 });
+app.addModule('tab', function () {
+	this.init = function () {
+		var tabSelect = $('<div />').addClass('tab_select');
+		
+		var select = $('<select />');
+		
+		$('.tab').append(tabSelect);
+		tabSelect.append(select);
+		
+		$('.tab_block a').each(function () {
+			var val = $(this).html();
+			var url = $(this).attr('href');
+			
+			var option = $('<option>').html(val).val(url);
+			
+			select.append(option);
+			
+			if ($(this).hasClass('active')) {
+				option.attr('selected', 'selected')
+			}
+		});
+		
+		select.on('change', function () {
+			location.href = $(this).val();
+		})
+	};
+});
 jQuery(function () {
 	app.callModules();
 });
